@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "astral-expansion",
+	"version": "${version}",
+	"name": "Astral Expansion",
+	"description": "Adds a bunch of stuff.",
+	"authors": [
+		"Megal"
+	],
+	"contact": {
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/astral-expansion/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.megal.AstralExpansion"
+		],
+		"client": [
+			"net.megal.AstralExpansionClient"
+		],
+		"fabric-datagen": [
+			"net.megal.AstralExpansionDataGen"
+		]
+	},
+	"mixins": [
+		"astral-expansion.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
