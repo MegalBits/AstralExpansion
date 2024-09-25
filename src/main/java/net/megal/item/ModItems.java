@@ -2,14 +2,21 @@ package net.megal.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.megal.AstralExpansion;
-import net.megal.block.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 
 public class ModItems {
+    public static final ExperienceSiphon EXPERIENCE_SIPHON = register("experience_siphon", new ExperienceSiphon(
+            new Item.Settings()
+                    .maxDamage(240)
+                    .maxCount(1)
+                    .rarity(Rarity.UNCOMMON)
+    ));
+
     public static Item item() {
         return new Item(new Item.Settings());
     }
@@ -76,7 +83,7 @@ public class ModItems {
 
     public static void initialize() {
         ItemGroupEvents.modifyEntriesEvent(ModItemGroups.MAIN).register(entries -> {
-
+            entries.add(EXPERIENCE_SIPHON);
         });
     }
 }

@@ -1,0 +1,8 @@
+{
+  "astral-expansion.itemgroup.main": "Astral Expansion",
+  "description.experience_siphon.use": "Can be used to convert experience back into experience orbs",
+  "enchantment.astral-expansion.extraction": "Extraction",
+  "enchantment.astral-expansion.quickened": "Quickened",
+  "entity.astral-expansion.delayed_pickup_experience_orb": "Delayed Pickup Experience Orb",
+  "item.astral-expansion.experience_siphon": "Experience Siphon"
+}

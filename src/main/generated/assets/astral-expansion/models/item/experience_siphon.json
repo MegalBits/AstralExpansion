@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "astral-expansion:item/experience_siphon"
+  }
+}

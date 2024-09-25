@@ -3,7 +3,8 @@
   "package": "net.megal.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "AnvilScreenHandlerMixin"
+    "AnvilScreenHandlerMixin",
+    "EnchantmentsMixin"
   ],
   "injectors": {
     "defaultRequire": 1
